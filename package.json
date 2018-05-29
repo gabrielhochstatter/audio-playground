@@ -18,6 +18,8 @@
   "homepage": "https://github.com/gabrielhochstatter/audio-playground#readme",
   "dependencies": {
     "howler": "^2.0.12",
-    "jasmine": "^3.1.0"
+    "http-server": "^0.11.1",
+    "jasmine": "^3.1.0",
+    "jquery": "^3.3.1"
   }
 }
