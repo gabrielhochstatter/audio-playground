@@ -1,20 +1,18 @@
-// var interval = require('../src/interval');
-//
-// describe("Sequencer", function() {
-//   beforeEach(function(){
-//     jasmine.clock().install();
-//   });
-//
-//   it("testing spies", function(){
-//     var testSeq = new interval.Sequencer();
-//     spyOn(testSeq, 'play');
-//     expect(testSeq.playSound.)
-//     testGame.turn();
-//     expect(testGame.playerX.thing).toHaveBeenCalled();
-//   });
-//
-//
-//
-//
-//
-// });
+require('../node_modules/howler/src/howler.core');
+var drum = require('../src/interval');
+
+
+describe("Sequencer", function() {
+  beforeEach(function(){
+    jasmine.clock().install();
+  });
+
+  it("testing spies", function(){
+    var testSeq = new drum.Sequencer();
+    spyOn(testSeq, 'playStep');
+    testSeq.playAll();
+    expect(testSeq.playStep).toHaveBeenCalled();
+  });
+
+
+});

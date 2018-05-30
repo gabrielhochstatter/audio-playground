@@ -5,22 +5,23 @@
   <meta charset="UTF-8">
   <title>AUDIO</title>
   <meta name="description" content="DESCRIPTION">
-  <link rel="stylesheet" href="PATH">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="node_modules/howler/src/howler.core.js"></script>
-  <script src="src/interval.js"></script>
+  <!-- <link rel="stylesheet" href="PATH"> -->
+
 
 
 </head>
 
 <body>
   <button id="playButton">Play</button>
+  <button onclick="drum.playAll();">start</button>
+  <button onclick="drum.stopCounter();">stop</button>
+  <button id="testButton">test button</button>
+  <p id="testP"></p>
 
-  <script>
-    $('#playButton').click(function(){
-      sound.play();
-    });
-  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="node_modules/howler/src/howler.core.js"></script>
+  <script src="src/Sequencer.js"></script>
+  <script src="src/scripts.js"></script>
 </body>
 
 </html>
